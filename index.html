@@ -27,7 +27,8 @@
 		}
 
 		.page h3{
-			font-size: 18;
+			font-size: 18px;
+			font-weight: lighter;
 			margin: 2em 0;
 			text-align: center;
 		}
@@ -39,7 +40,7 @@
 		}
 
 		.btn-bordered{
-			border:2px white solid;
+			border:2px rgba(255,255,255,.2) solid;
 		}
 		
 		.welcome-page-wrapper{
@@ -48,14 +49,16 @@
 		}
 
 		.welcome-page{
+			padding-top: 20vh;
 			min-height: 768px;
-			height: 1vh;
+			height: 100vh;
 			background-color: gray;
 
 		}
 
 			.welcome-page > *{
 				text-align: center;
+				color: white;
 			}
 
 			.welcome-page h1{
@@ -69,6 +72,7 @@
 
 			.welcome-page p{
 				font-size:24px;
+				margin-bottom: 3em;
 			}
 
 			.welcome-features{
@@ -95,6 +99,8 @@
 
 			.about-panel > h3{
 				font-size: 23px;
+				margin-top: 0;
+				margin-bottom: 24px;
 				text-align: left;
 			}
 
@@ -138,7 +144,7 @@
 
 
 		.service-page{
-
+			padding-bottom: 48px;
 		}
 			.service-content > * {
 				margin: 0 10px;
@@ -229,6 +235,8 @@
 
 		.plan-page-wrapper{
 			background-color: lightgray;
+			padding-top: 24px;
+			padding-bottom: 36px;
 		}
 
 		.plan-area{
@@ -242,8 +250,28 @@
 				text-align: center;
 			}
 
+			.plan-area h5{
+				font-size: 18px;
+				margin:24px 0;
+			}
+
+			.plan-area h4{
+				font-size:50px;
+			}
+
+			.plan-area *{
+				padding: 8px 0;
+			}
 
 
+			.plan-area .plan-feature{
+				border-top: 1px solid gray;
+			}
+
+			.plan-area .get-started{
+				background-color: orange;
+				color: white;
+			}
 
 
 
@@ -252,12 +280,161 @@
 			margin:0 auto;
 		}
 
+		.clients-page img{
+			display: inline-block;
+		}
+
+	.testimonials-page{
+		padding:36px 0;
+	}
+		.test-members > *{
+			margin: 0 10px;
+			width: 300px;
+			float: left;
+		}
+
+		.member img{
+			display: block;
+			margin:24px auto;
+		}
+
+		.member p {
+			line-height: 1.4em;
+			font-size: 18px;
+			color:gray;
+			height: 6em;
+			overflow: hidden;
+		}
+
+		.member p:before,
+		.member p:after{
+			content: '"';
+		}
+
+
+	.footer-wraper{
+		background-color: #071c33;
+		padding: 36px 0;
+	}
+
+		.footer > *{
+			margin-right: 20px;
+			color: #ffae00;
+			float: left;
+		}
+
+		.footer *:last-child{
+			margin-right: 0;
+		}
+
+		.footer-contact{
+			width: 210px;
+		}
+			.footer-contact h2{
+				font-size: 32px;
+			}
+			.footer-contact h3{
+				font-size:16px;
+				margin: 1em 0;
+				color:lightgray;
+				text-align: left;
+				margin-bottom: 2em;
+			}
+
+			.footer-contact .address{
+				color: white;
+				margin-bottom: 2em;
+			}
+
+			.footer-contact .contact{
+				color:darkgrey;
+			}
+
+		.footer-blogroll{
+			width: 190px;
+		}
+			.footer-blogroll h2,	
+			.footer-posts h2{
+				color: white;
+				font-weight: 200;
+			}
+			.footer-blogroll ul{
+				padding: 0;
+			}
+			.footer-blogroll li{
+				list-style: none;
+				line-height: 2em;
+				font-weight: 100;
+			}
+
+			.footer-blogroll li:before{
+				content: '>';
+				margin-right: 1em;
+			}
+
+		.footer-posts{			
+			width: 200px;
+		}
+
+			.footer-posts .post{
+				padding: 8px 0;
+				border-bottom: 1px solid rgba(255,255,255,.3)
+			}
+
+			.footer-posts .post h3{
+				font-weight: 200;
+				font-size: 16px;
+				text-align:left;
+				margin-top: 16px;
+				margin-bottom: 8px;
+			}
+			.footer-posts .post .date{
+				color:darkgrey;
+				font-size: 12px;
+				margin: 1em 0;
+			}
+		.footer-info{
+			width: 280px;			
+		}
+			.usages > div{
+				display: inline-block;
+				margin-right: 24px;
+				text-align: center;
+			}
+			.usages h2{
+				font-size: 28px;
+			}
+			.usages h6{
+				font-size: 12px;
+				color:white;
+			}
+
+			.footer-info .subscribe h3{
+				color:darkgrey;
+			}
+
+			.footer-info .socials{
+				margin-top: 16px;
+			}				
+
+				.footer-info .social{
+					display: inline-block;
+					margin-right: 1em;
+				}
+				.footer-info .social img{
+					float: left;
+					padding-right: 8px;
+					display: inline-block;
+				}
+				.footer-info .social span{
+					font-size: 12px;
+					color:white;
+					font-weight: 100;
+				}
+
 	</style>
 </head>
 <body>
-	<nav>
-		navs
-	</nav>
 	<div class="welcome-page-wrapper">
 		<div class="welcome-page page">
 			<h1>10 Years</h1>
@@ -466,77 +643,92 @@
 	<div class="testimonials-page page">
 		<h1>Testimonials</h1>
 		<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti voluptate eius dolorum consectetur ducimus sequi iure beatae, dolorem, quasi dicta quod est. Consequuntur sit, molestias ad mollitia dolor, alias nesciunt?</h3>
-		<div class="member">
-			<img src="" alt="">
-			<h4></h4>
-			<h5></h5>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi odio necessitatibus, quisquam aliquam iure beatae doloribus, corrupti quidem qui eos sapiente sed! Laudantium similique possimus, maxime dignissimos! Esse, aliquam, nisi?</p>
-		</div>
-		<div class="member">
-			<img src="" alt="">
-			<h4></h4>
-			<h5></h5>
-			<p>Placeat animi sit fuga, perferendis obcaecati laborum sint rerum. Deserunt obcaecati accusamus laboriosam eos aperiam esse ut ipsam enim. Ex quo doloribus voluptatibus quaerat sit, cupiditate. Maxime illo deserunt unde.</p>
-		</div>
-		<div class="member">
-			<img src="" alt="">
-			<h4></h4>
-			<h5></h5>
-			<p>Accusamus perspiciatis eligendi neque praesentium unde sed accusantium fugiat minima quia. Deleniti temporibus corporis sed ducimus cum quia neque veniam, magni harum ratione debitis impedit, assumenda quam. Nostrum, possimus aliquid.</p>
+
+		<div class="test-members clear">
+			<div class="member">
+				<img src="http://fakeimg.pl/100x100/00CED1/FFF/?text=img+placeholder">
+				<h4></h4>
+				<h5></h5>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi odio necessitatibus, quisquam aliquam iure beatae doloribus, corrupti quidem qui eos sapiente sed! Laudantium similique possimus, maxime dignissimos! Esse, aliquam, nisi?</p>
+			</div>
+			<div class="member">
+				<img src="http://fakeimg.pl/100x100/00CED1/FFF/?text=img+placeholder">
+				<h4></h4>
+				<h5></h5>
+				<p>Placeat animi sit fuga, perferendis obcaecati laborum sint rerum. Deserunt obcaecati accusamus laboriosam eos aperiam esse ut ipsam enim. Ex quo doloribus voluptatibus quaerat sit, cupiditate. Maxime illo deserunt unde.</p>
+			</div>
+			<div class="member">
+				<img src="http://fakeimg.pl/100x100/00CED1/FFF/?text=img+placeholder">
+				<h4></h4>
+				<h5></h5>
+				<p>Accusamus perspiciatis eligendi neque praesentium unde sed accusantium fugiat minima quia. Deleniti temporibus corporis sed ducimus cum quia neque veniam, magni harum ratione debitis impedit, assumenda quam. Nostrum, possimus aliquid.</p>
+			</div>
 		</div>
 		<div class="arrows"><span class="arrow"></span><span class="arrow"></span></div>
 	</div>
-
-	<footer class="footer page">
-		<div class="footer-contact">
-			<h2></h2>
-			<h3>Lorem ipsum dolor sit amet, consectetur.</h3>
-			<div class="address"></div>
-			<div class="contact"></div>
-		</div>
-		<div class="footer-blogroll">
-			<h2></h2>
-			<ul>
-				<li>Lorem ipsum.</li>
-				<li>Sed, voluptatum.</li>
-				<li>Molestiae, quae.</li>
-				<li>Optio, mollitia!</li>
-				<li>Natus, excepturi.</li>
-				<li>Aliquid, molestiae.</li>
-			</ul>
-		</div>
-		<div class="footer-posts">
-			<h2></h2>
-			<div class="post">
-				<h3>Lorem ipsum dolor sit.</h3>
-				<div class="date"></div>
+	
+	<div class="footer-wraper">
+		<footer class="footer page">
+			<div class="footer-contact">
+				<h2>Construction</h2>
+				<h3>Lorem ipsum dolor sit amet, consectetur.</h3>
+				<div class="address">8901 Marmora Road, Glasgow, D04 89GR.</div>
+				<div class="contact">Phone +1 800 603 6035 Fax +1 800 889 9898 Email info@demolink.org</div>
 			</div>
-			<div class="post">
-				<h3>Laboriosam ad, aliquam quae!</h3>
-				<div class="date"></div>
+			<div class="footer-blogroll">
+				<h2>Blogroll</h2>
+				<ul>
+					<li>Lorem ipsum.</li>
+					<li>Sed, voluptatum.</li>
+					<li>Molestiae, quae.</li>
+					<li>Optio, mollitia!</li>
+					<li>Natus, excepturi.</li>
+					<li>Aliquid, molestiae.</li>
+				</ul>
 			</div>
-			<div class="post">
-				<h3>Dolorem rerum, non possimus?</h3>
-				<div class="date"></div>
+			<div class="footer-posts">
+				<h2>Recent Posts</h2>
+				<div class="post">
+					<h3>Lorem ipsum dolor sit.</h3>
+					<div class="date">July 10, 2014</div>
+				</div>
+				<div class="post">
+					<h3>Laboriosam ad, aliquam quae!</h3>
+					<div class="date">July 10, 2014</div>
+				</div>
+				<div class="post">
+					<h3>Dolorem rerum, non possimus?</h3>
+					<div class="date">July 10, 2014</div>
+				</div>
 			</div>
-		</div>
-		<div class="footer-area4">
-			<div class="usages">
-				<h2></h2>
-				<h6></h6>
-				<h2></h2>
-				<h6></h6>
+			<div class="footer-info">
+				<div class="usages">
+					<div>
+						<h2>15,065,421</h2>
+						<h6>TOTAL DOWNLOADS</h6>
+					</div>
+					<div>
+						<h2>18,465</h2>
+						<h6>CLIENTS</h6>
+					</div>
+				</div>
+				<div class="subscribe">
+					<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, aut.</h3>
+					<div class="form"><input type="text"><button></button></div>
+				</div>
+				<div class="socials">
+					<div class="social">
+						<img src="http://fakeimg.pl/35x35/00CED1/FFF/?text=fb">
+						<span>Like us on <br/>Facebook</span>
+					</div>
+					<div class="social">
+						<img src="http://fakeimg.pl/35x35/00CED1/FFF/?text=fb">
+						<span>Subscribe to<br/> RSS</span>
+					</div>
+				</div>
 			</div>
-			<div class="subscribe">
-				<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, aut.</h3>
-				<div class="form"><input type="text"><button></button></div>
-			</div>
-			<div class="socials">
-				<div class="social"><img src="" alt=""><span></span></div>
-				<div class="social"><img src="" alt=""><span></span></div>
-			</div>
-		</div>
-	</footer>
+		</footer>
+	</div>
 
 	<footet class="end-footer page">
 		<span class="copyright"></span>
