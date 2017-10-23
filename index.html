@@ -5,35 +5,547 @@
 	<title>Html Sample</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
 	<style>
+		body *{
+			font-family: sans-serif;
+		}
+
+		h1,h2,h3,h4,h5,h6,p{
+			margin:0;
+		}
+
 		
+		
+
+		.page {
+			width : 960px;
+			margin:0 auto;
+		}
+		.page h1{
+			font-size: 47px;
+			margin: 50px 0;
+			text-align: center;
+		}
+
+		.page h3{
+			font-size: 18;
+			margin: 2em 0;
+			text-align: center;
+		}
+
+		.page:after, .clear{
+			content: '';
+			clear:both;
+			display: block;
+		}
+
+		.btn-bordered{
+			border:2px white solid;
+		}
+		
+		.welcome-page-wrapper{
+			background-color: gray;
+			width: 100%;
+		}
+
+		.welcome-page{
+			min-height: 768px;
+			height: 1vh;
+			background-color: gray;
+
+		}
+
+			.welcome-page > *{
+				text-align: center;
+			}
+
+			.welcome-page h1{
+				font-size: 79px;
+
+			}
+
+			.welcome-page h4{
+				font-size:21px;
+			}
+
+			.welcome-page p{
+				font-size:24px;
+			}
+
+			.welcome-features{
+				margin: 0 auto;
+				width: 340px;
+			}
+
+				.welcome-features .btn{
+					width: 130px;
+					padding: 4px 8px;
+					margin: 10px;
+					float: left;
+				}
+		
+		.about-page{
+			margin: 0 auto;
+		}
+		.about-panel{
+			float: left;
+			width: 300px;
+			margin: 10px;
+			padding: 36px 0;
+		}
+
+			.about-panel > h3{
+				font-size: 23px;
+				text-align: left;
+			}
+
+			.about-panel > h3::after{
+				display: block;
+				content: ' ';
+				width:2em;
+				height: 1px;
+				border-top:2px orange solid;
+				margin: 8px 0;
+			}
+		
+
+
+		.goal-page-wrapper{
+			background-color: orange;
+		}
+			.goal-page{
+				border-right: 1px solid white;
+				border-left: 1px solid white;
+			}
+			.goal-page .goal-panel{
+				border-right: 1px solid white;
+				width: 166px;
+				padding: 36px;
+				float: left;
+			}
+
+			.goal-page .goal-panel:last-child{
+				border-right: 0;
+			}
+
+				.goal-page .goal-panel > *{
+					color: white;
+					text-align: center;
+					white-space: nowrap;
+				}
+				.goal-page .goal-panel > h2{
+					font-size: 68px;
+				}
+
+
+		.service-page{
+
+		}
+			.service-content > * {
+				margin: 0 10px;
+				float: left;
+			}
+
+			.left-service, .right-service{
+				width: 312px;
+			}
+
+			.service{
+				padding:20px;
+			}
+
+				.service  img{
+					margin-bottom: 32px;
+				}
+
+				.left-service .service img{
+					margin-left: 16px;
+					float: right;
+				}
+
+				.right-service .service img{
+					margin-right: 16px;
+					float: left;
+				}
+				.service h3{
+					margin-bottom: 2em;
+				}
+				.service p{
+					max-height: 3.5em;
+					overflow: hidden;
+				}
+
+		.goal-page2-wrapper{
+			background-color: lightgray;
+		}
+		
+		
+			.goal-page2 > .goal-panel {
+				float: left;
+				width: 192px;
+				padding: 0 24px;
+				margin-top:36px;
+				margin-bottom: 16px;
+			}
+
+			.goal-page2 > .goal-panel *{
+				text-align: center;
+			}
+
+			.goal-page2 > .goal-panel > div{
+				height: 3em;
+				margin: 2em 0;
+			}
+
+		.blog-content .blog {
+			width: 300px;
+			float: left;
+			margin: 0 10px;
+		}
+			.blog-content .blog h4{
+				margin:2em 0;
+				font-size: 23px;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+			}
+
+			.blog-content .blog p{
+				height: 6em;
+				overflow: hidden;
+			}
+			
+			.blog-content .blog .meta{
+				white-space: nowrap;
+				margin: 2em 0;
+			}
+				.blog-content .blog .meta .read-more{
+					float: right;
+				}
+
+				.blog-content .blog .meta > .date{
+					margin-right: 3em;
+				}
+			
+
+		.plan-page-wrapper{
+			background-color: lightgray;
+		}
+
+		.plan-area{
+			float: left;
+			margin: 0 10px;
+			width: 220px;
+			background-color: white;
+		}
+
+			.plan-area *{
+				text-align: center;
+			}
+
+
+
+
+
+
+
+		.clients-page .clients{
+			margin:0 auto;
+		}
+
 	</style>
 </head>
 <body>
 	<nav>
 		navs
 	</nav>
-	.welcome-page.page>h1+h4+(p>lorem15)+.welcome-features>.btn.btn-bordered*2
+	<div class="welcome-page-wrapper">
+		<div class="welcome-page page">
+			<h1>10 Years</h1>
+			<h4>Of experience in the industry</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus est mollitia, rerum blanditiis, perspiciatis harum.</p>
+			<div class="welcome-features">
+				<div class="btn btn-bordered">See All Projects</div>
+				<div class="btn btn-bordered">About Us</div>
+			</div>
+		</div>
+	</div>
+	<div class="about-page page">
+		<div class="about-panel">
+			<h3>Our Mission</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas eveniet deserunt ipsa pariatur accusantium consectetur ad, ipsam nam vitae nulla, numquam, possimus. Ut atque magnam maiores corporis praesentium excepturi, officia.</p>
+		</div>
+		<div class="about-panel">
+			<h3>What We Do</h3>
+			<p>Corrupti sit nobis nihil, deleniti odit, architecto, ea quaerat eaque porro reprehenderit ab expedita ratione voluptatem. Ad voluptatibus voluptates culpa aspernatur, amet asperiores. Nemo, est. Commodi id deserunt dicta explicabo.</p>
+		</div>
+		<div class="about-panel">
+			<h3>Why Choose Us</h3>
+			<p>Sit, repellendus voluptate accusantium! A nobis, quis eius similique ipsum atque repellat sapiente labore, et quia praesentium. Libero iusto inventore at tenetur ipsa eaque sequi iure, assumenda sed, cumque earum.</p>
+		</div>
+	</div>
+	<div class="goal-page-wrapper">
+		<div class="goal-page page">
+			<div class="goal-panel">
+				<h2>10</h2>
+				<div>Lorem ipsum dolor.</div>
+			</div>
+			<div class="goal-panel">
+				<h2>7</h2>
+				<div>Quibusdam, optio quia.</div>
+			</div>
+			<div class="goal-panel">
+				<h2>26</h2>
+				<div>Obcaecati quia, soluta.</div>
+			</div>
+			<div class="goal-panel">
+				<h2>12</h2>
+				<div>Delectus voluptatibu!</div>
+			</div>
+		</div>
+	</div>			
+  	<div class="service-page page">
+	   	<h1>Our Services</h1>
+	   	<div class="service-content">
+	   		<div class="left-service">
+	   			<div class="service">
+	   				<img src="http://fakeimg.pl/70x70/00CED1/FFF/?text=icon">
+	   				<h3>Lorem ipsum.</h3>
+	   				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio sequi qui dolores modi totam fugit similique veniam tempora inventore quaerat nihil debitis, harum quod delectus aspernatur incidunt. Asperiores, omnis cumque!</p>
+	   			</div>
+	   			<div class="service">
+	   				<img src="http://fakeimg.pl/70x70/00CED1/FFF/?text=icon">
+	   				<h3>Quae, nemo!</h3>
+	   				<p>Vel soluta, voluptate necessitatibus facere deleniti expedita nobis placeat fuga similique numquam obcaecati repellat sed nulla sit non et laudantium nemo, veritatis est. Commodi facere ea minus dolorum officiis explicabo?</p>
+	   			</div>
+	   			<div class="service">
+	   				<img src="http://fakeimg.pl/70x70/00CED1/FFF/?text=icon">
+	   				<h3>Consequatur, impedit!</h3>
+	   				<p>Distinctio vitae obcaecati perspiciatis illo cupiditate ipsa, eum quia impedit, aspernatur architecto culpa sit enim. Dignissimos soluta, culpa asperiores atque ducimus, obcaecati est aliquid similique possimus molestias pariatur architecto deserunt!</p>
+	   			</div>
+	   		</div>
+	   		<div>
+	   			<img src="https://fakeimg.pl/276x540/00CED1/FFF/?text=iphone">
+	   		</div>
+	   		<div class="right-service">
+	   			<div class="service">
+	   				<img src="http://fakeimg.pl/70x70/00CED1/FFF/?text=icon">
+	   				<h3>Lorem ipsum.</h3>
+	   				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat eius qui adipisci, porro sequi provident sapiente ab impedit? Quasi libero maxime eveniet alias repellendus eius, nihil qui cupiditate iste dolore.</p>
+	   			</div>
+	   			<div class="service">
+	   				<img src="http://fakeimg.pl/70x70/00CED1/FFF/?text=icon">
+	   				<h3>Itaque, aperiam.</h3>
+	   				<p>Eum laudantium blanditiis, esse, quibusdam nesciunt ab quos minima quae qui accusantium aut unde dicta, accusamus veniam enim iure sint est explicabo. Ea ullam maiores perspiciatis rerum culpa voluptatem ipsum.</p>
+	   			</div>
+	   			<div class="service">
+	   				<img src="http://fakeimg.pl/70x70/00CED1/FFF/?text=icon">
+	   				<h3>Fugiat, officiis!</h3>
+	   				<p>Modi necessitatibus quasi quae iure cupiditate voluptatibus rerum? Natus mollitia praesentium beatae delectus recusandae quisquam, fuga consectetur inventore voluptatibus est quaerat expedita, laboriosam nesciunt nisi minus quam repellendus eos veniam.</p>
+	   			</div>
+	   		</div>
+	   	</div>
+   	</div> 
+	<div class="goal-page2-wrapper">
+		<div class="goal-page2 page">
+			<div class="goal-panel">
+				<img src="http://fakeimg.pl/192x192/00CED1/FFF/?text=73%"/>
+				<div>Leadership</div>
+			</div>
+			<div class="goal-panel">
+				<img src="http://fakeimg.pl/192x192/00CED1/FFF/?text=73%"/>
+				<div>Management</div>
+			</div>
+			<div class="goal-panel">
+				<img src="http://fakeimg.pl/192x192/00CED1/FFF/?text=73%"/>
+				<div>Innovation And Creativity</div>
+			</div>
+			<div class="goal-panel">
+				<img src="http://fakeimg.pl/192x192/00CED1/FFF/?text=73%"/>
+				<div>Resilience</div>
+			</div>
+		</div>
+	</div>
+	<div class="blog-page page">
+		<h1>Latest From The Blog</h1>
+		<div class="blog-content">
+			<div class="blog">
+				<img src="http://fakeimg.pl/300x200/00CED1/FFF/?text=post">
+				<h4>Construction Company Services</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit minima delectus, dolorem atque laudantium ex enim accusantium deserunt, possimus ea quidem, culpa rerum repellendus placeat sint similique a quo aspernatur.</p>
+				<div class="meta">
+					<span class="date">2016/01/01</span>
+					<span class="reply">10</span>
+					<span class="read-more">Read More</span>
+				</div>
+			</div>
+			<div class="blog">
+				<img src="http://fakeimg.pl/300x200/00CED1/FFF/?text=post">
+				<h4>At voluptates consequuntur</h4>
+				<p>At voluptates consequuntur recusandae quia libero iste, sed unde ratione esse eaque ullam, nobis non consectetur, ipsam aperiam ad sunt corrupti aspernatur dolore. Sequi ea, maxime itaque repellendus, expedita tempore.</p>
+				<div class="meta">
+					<span class="date">2016/01/01</span>
+					<span class="reply">10</span>
+					<span class="read-more">Read More</span>
+				</div>
+			</div>
+			<div class="blog">
+				<img src="http://fakeimg.pl/300x200/00CED1/FFF/?text=post">
+				<h4>Necessitatibus accusamus exercitationem</h4>
+				<p>Necessitatibus accusamus exercitationem nesciunt optio velit earum eius voluptatibus illum a animi sed ipsam consequuntur nisi tempore consequatur praesentium, quidem rem est ex assumenda enim, blanditiis doloremque repellat sapiente? Expedita?</p>
+				<div class="meta">
+					<span class="date">2016/01/01</span>
+					<span class="reply">10</span>
+					<span class="read-more">Read More</span>
+				</div>
+			</div>
+		</div>
+	</div>
 
-	.about-page.page>.about-panel*3>h3+(p>lorem30)
+	<div class="plan-page-wrapper">
+	  	<div class="plan-page page">
+	  		<h1>Choose Your Plan</h1>
+	  		<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi eos quasi harum vitae possimus eum nobis, nisi nemo veritatis ipsa.</h3>
+	  		<div class="plan-area">
+	  			<h5>Echonomy</h5>
+	  			<h4>20</h4>
+	  			<div class="plan-feature">Lorem ipsum.</div>
+	  			<div class="plan-feature">Explicabo, iure.</div>
+	  			<div class="plan-feature">Iusto, dolor?</div>
+	  			<div class="plan-feature">Eius, nostrum!</div>
+	  			<div class="get-started">Get Started</div>
+	  		</div>
+	  		<div class="plan-area">
+	  			<h5>Silver</h5>
+	  			<h4>143</h4>
+	  			<div class="plan-feature">Lorem ipsum.</div>
+	  			<div class="plan-feature">Magni, modi.</div>
+	  			<div class="plan-feature">A, sequi.</div>
+	  			<div class="plan-feature">Beatae, totam!</div>
+	  			<div class="get-started">Get Started</div>
+	  		</div>
+	  		<div class="plan-area">
+	  			<h5>Gold</h5>
+	  			<h4>170</h4>
+	  			<div class="plan-feature">Lorem ipsum.</div>
+	  			<div class="plan-feature">Necessitatibus, nostrum.</div>
+	  			<div class="plan-feature">Culpa, eaque.</div>
+	  			<div class="plan-feature">Minima, maxime.</div>
+	  			<div class="get-started">Get Started</div>
+	  		</div>
+	  		<div class="plan-area">
+	  			<h5>Platinum</h5>
+	  			<h4>419</h4>
+	  			<div class="plan-feature">Lorem ipsum.</div>
+	  			<div class="plan-feature">Id, mollitia.</div>
+	  			<div class="plan-feature">Explicabo, rerum.</div>
+	  			<div class="plan-feature">Ad, repudiandae?</div>
+	  			<div class="get-started">Get Started</div>
+	  		</div>
+	  	</div>
+  	</div>
 
-	.goal-page.page>.goal-panel*4>h2+div>lorem3
+	
 
-	.service-page.page>h1+(.service-content>(.left-service>(.service>(img+h3+(p>lorem)))*3)+(div>img)+(.right-service>(.service>(img+h3+(p>lorem)))*3))
+	<div class="newsletter-page page">
+		<h1>Subscribe to Our Newsletter</h1>
+		<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus modi, distinctio doloremque numquam porro dicta soluta molestias eveniet voluptatibus. Placeat quae sint nemo incidunt nihil repellendus. Placeat sit maiores ad.</h3>
+		<div class="subscribe"><input type="text"><button></button></div>
+	</div>
 
-	.goal-page.page>.goal-panel*4>img+div>lorem3
+	<div class="clients-page page">
+		<h1>Our Clients</h1>
+		<div class="clients clear">
+			<img src="http://fakeimg.pl/150x100/00CED1/FFF/?text=img+placeholder">
+			<img src="http://fakeimg.pl/150x100/00CED1/FFF/?text=img+placeholder">
+			<img src="http://fakeimg.pl/150x100/00CED1/FFF/?text=img+placeholder">
+			<img src="http://fakeimg.pl/150x100/00CED1/FFF/?text=img+placeholder">
+			<img src="http://fakeimg.pl/150x100/00CED1/FFF/?text=img+placeholder">
+		</div>
+	</div>
 
-	.blog-page.page>h1+(.blog-content>(.blog>img+h4+(p>lorem)+(.meta>span.date+span.reply+span.read-more))*3)
+	<div class="testimonials-page page">
+		<h1>Testimonials</h1>
+		<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti voluptate eius dolorum consectetur ducimus sequi iure beatae, dolorem, quasi dicta quod est. Consequuntur sit, molestias ad mollitia dolor, alias nesciunt?</h3>
+		<div class="member">
+			<img src="" alt="">
+			<h4></h4>
+			<h5></h5>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi odio necessitatibus, quisquam aliquam iure beatae doloribus, corrupti quidem qui eos sapiente sed! Laudantium similique possimus, maxime dignissimos! Esse, aliquam, nisi?</p>
+		</div>
+		<div class="member">
+			<img src="" alt="">
+			<h4></h4>
+			<h5></h5>
+			<p>Placeat animi sit fuga, perferendis obcaecati laborum sint rerum. Deserunt obcaecati accusamus laboriosam eos aperiam esse ut ipsam enim. Ex quo doloribus voluptatibus quaerat sit, cupiditate. Maxime illo deserunt unde.</p>
+		</div>
+		<div class="member">
+			<img src="" alt="">
+			<h4></h4>
+			<h5></h5>
+			<p>Accusamus perspiciatis eligendi neque praesentium unde sed accusantium fugiat minima quia. Deleniti temporibus corporis sed ducimus cum quia neque veniam, magni harum ratione debitis impedit, assumenda quam. Nostrum, possimus aliquid.</p>
+		</div>
+		<div class="arrows"><span class="arrow"></span><span class="arrow"></span></div>
+	</div>
 
-	.plan-area.page>h1+h3+(.plan-area>h5+h4+(.plan-feature*4)+.get-started)*4
+	<footer class="footer page">
+		<div class="footer-contact">
+			<h2></h2>
+			<h3>Lorem ipsum dolor sit amet, consectetur.</h3>
+			<div class="address"></div>
+			<div class="contact"></div>
+		</div>
+		<div class="footer-blogroll">
+			<h2></h2>
+			<ul>
+				<li>Lorem ipsum.</li>
+				<li>Sed, voluptatum.</li>
+				<li>Molestiae, quae.</li>
+				<li>Optio, mollitia!</li>
+				<li>Natus, excepturi.</li>
+				<li>Aliquid, molestiae.</li>
+			</ul>
+		</div>
+		<div class="footer-posts">
+			<h2></h2>
+			<div class="post">
+				<h3>Lorem ipsum dolor sit.</h3>
+				<div class="date"></div>
+			</div>
+			<div class="post">
+				<h3>Laboriosam ad, aliquam quae!</h3>
+				<div class="date"></div>
+			</div>
+			<div class="post">
+				<h3>Dolorem rerum, non possimus?</h3>
+				<div class="date"></div>
+			</div>
+		</div>
+		<div class="footer-area4">
+			<div class="usages">
+				<h2></h2>
+				<h6></h6>
+				<h2></h2>
+				<h6></h6>
+			</div>
+			<div class="subscribe">
+				<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, aut.</h3>
+				<div class="form"><input type="text"><button></button></div>
+			</div>
+			<div class="socials">
+				<div class="social"><img src="" alt=""><span></span></div>
+				<div class="social"><img src="" alt=""><span></span></div>
+			</div>
+		</div>
+	</footer>
 
-	.newsletter-page.page>h1+(h3>lorem)+.subscribe>input+button
-
-	.clients-page.page>h1+.clients>img*6
-
-	.testimonials-page.page>h1+(h3>lorem)+(.member>img+h4+h5+(p>lorem30))*3+.arrows>span.arrow*2
-
-	footer.footer.page>(.footer-contact>h2+(h3>lorem6)+.address+.contact)+(.footer-blogroll>h2+ul>(li>lorem2)*6)+(.footer-posts>h2+(.post>(h3>lorem4)+div.date)*3)+(.footer-area4>(.usages>(h2+h6)*2)+(.subscribe>(h3>lorem10)+.form>(input+button))+(.socials>(.social>img+span)*2))
-	footet.end-footer.page>span.copyright+img.social*5
+	<footet class="end-footer page">
+		<span class="copyright"></span>
+		<img src="" alt="" class="social">
+		<img src="" alt="" class="social">
+		<img src="" alt="" class="social">
+		<img src="" alt="" class="social">
+		<img src="" alt="" class="social">
+	</footet>
 
 
 </body>
