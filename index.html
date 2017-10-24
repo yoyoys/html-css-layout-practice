@@ -33,7 +33,7 @@
 			text-align: center;
 		}
 
-		.page:after, .clear{
+		.page:after, .clear:after{
 			content: '';
 			clear:both;
 			display: block;
@@ -62,7 +62,7 @@
 
 			.welcome-page h1{
 				font-size: 79px;
-
+				margin: 0;
 			}
 
 			.welcome-page h4{
@@ -71,7 +71,7 @@
 
 			.welcome-page p{
 				font-size:24px;
-				margin-bottom: 3em;
+				margin: 3em 0;				
 			}
 
 			.welcome-features{
@@ -80,8 +80,8 @@
 			}
 
 				.welcome-features .btn{
-					width: 130px;
-					padding: 4px 8px;
+					width: 114px;
+					padding: 8px 16px;
 					margin: 10px;
 					float: left;
 				}
@@ -264,24 +264,32 @@
 
 
 			.plan-area .plan-feature{
-				border-top: 1px solid gray;
+				border-top: 1px solid lightgray;
 			}
 
 			.plan-area .get-started{
 				background-color: orange;
 				color: white;
 			}
+	
+	.newsletter-page-wrapper{
+		background-color: gray;
+		padding: 50px;
+	}
+			
+	.newsletter-page .subscribe{
+		text-align: center;
+	}
 
+	
+	.clients-page .clients{
+		margin:0 auto;
+		text-align: center;
+	}
 
-
-
-		.clients-page .clients{
-			margin:0 auto;
-		}
-
-		.clients-page img{
-			display: inline-block;
-		}
+	.clients-page img{
+		display: inline-block;
+	}
 
 	.testimonials-page{
 		padding:36px 0;
@@ -308,6 +316,11 @@
 		.member p:before,
 		.member p:after{
 			content: '"';
+		}
+		.testimonials-page .arrows{
+			font-weight: 800;
+			margin: 32px 0;
+			text-align: center;
 		}
 
 
@@ -420,17 +433,32 @@
 					display: inline-block;
 					margin-right: 1em;
 				}
-				.footer-info .social img{
-					float: left;
-					padding-right: 8px;
-					display: inline-block;
-				}
-				.footer-info .social span{
-					font-size: 12px;
-					color:white;
-					font-weight: 100;
-				}
+					.footer-info .social img{
+						float: left;
+						padding-right: 8px;
+						display: inline-block;
+					}
+					.footer-info .social span{
+						font-size: 12px;
+						color:white;
+						font-weight: 100;
+					}
 
+				.footer-info .form{
+					text-align: center;
+				}
+					.footer-info .form input{
+						width: 180px;
+					}
+		.end-footer{
+			line-height: 60px;
+		}	
+			.end-footer div{
+				float: right;				
+			}
+			.end-footer img{
+				vertical-align: middle;
+			}
 	</style>
 </head>
 <body>
@@ -621,13 +649,13 @@
   	</div>
 
 	
-
-	<div class="newsletter-page page">
-		<h1>Subscribe to Our Newsletter</h1>
-		<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus modi, distinctio doloremque numquam porro dicta soluta molestias eveniet voluptatibus. Placeat quae sint nemo incidunt nihil repellendus. Placeat sit maiores ad.</h3>
-		<div class="subscribe"><input type="text"><button></button></div>
+	<div class="newsletter-page-wrapper">
+		<div class="newsletter-page page">
+			<h1>Subscribe to Our Newsletter</h1>
+			<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus modi, distinctio doloremque numquam porro dicta soluta molestias eveniet voluptatibus. Placeat quae sint nemo incidunt nihil repellendus. Placeat sit maiores ad.</h3>
+			<div class="subscribe"><input type="text"><button>Subscribe</button></div>
+		</div>
 	</div>
-
 	<div class="clients-page page">
 		<h1>Our Clients</h1>
 		<div class="clients clear">
@@ -663,7 +691,10 @@
 				<p>Accusamus perspiciatis eligendi neque praesentium unde sed accusantium fugiat minima quia. Deleniti temporibus corporis sed ducimus cum quia neque veniam, magni harum ratione debitis impedit, assumenda quam. Nostrum, possimus aliquid.</p>
 			</div>
 		</div>
-		<div class="arrows"><span class="arrow"></span><span class="arrow"></span></div>
+		<div class="arrows">
+			<span class="arrow"><</span>
+			<span class="arrow">></span>
+		</div>
 	</div>
 	
 	<div class="footer-wraper">
@@ -713,7 +744,7 @@
 				</div>
 				<div class="subscribe">
 					<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, aut.</h3>
-					<div class="form"><input type="text"><button></button></div>
+					<div class="form"><input type="text"><button>subscribe</button></div>
 				</div>
 				<div class="socials">
 					<div class="social">
@@ -729,14 +760,17 @@
 		</footer>
 	</div>
 
-	<footet class="end-footer page">
-		<span class="copyright"></span>
-		<img src="" alt="" class="social">
-		<img src="" alt="" class="social">
-		<img src="" alt="" class="social">
-		<img src="" alt="" class="social">
-		<img src="" alt="" class="social">
-	</footet>
+	<footer class="end-footer page">
+		<span class="copyright">© 2017 All Rights Reserved. Terms of Use | Privacy Policy</span>
+		<div>
+			<img src="http://fakeimg.pl/35x40/00CED1/FFF/?text=f">
+			<img src="http://fakeimg.pl/35x40/00CED1/FFF/?text=f">
+			<img src="http://fakeimg.pl/35x40/00CED1/FFF/?text=f">
+			<img src="http://fakeimg.pl/35x40/00CED1/FFF/?text=f">
+			<img src="http://fakeimg.pl/35x40/00CED1/FFF/?text=f">
+			<img src="http://fakeimg.pl/35x40/00CED1/FFF/?text=f">		
+		</div>
+	</footer>
 
 
 </body>
